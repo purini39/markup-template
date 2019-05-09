@@ -1,8 +1,7 @@
-// base css
 @charset "UTF-8";
 
 @import "../../_various";
-@import "normalize.css";
+@import "destyle.css";
 
 * {
   box-sizing: border-box;
@@ -21,6 +20,7 @@ body {
   background: #fff;
   font-family: Meiryo, "メイリオ", "Hiragino Kaku Gothic Pro",
     "ヒラギノ角ゴ Pro W3", Verdana, Helvetica, Arial, sans-serif;
+  // font-family: "Noto Sans JP";
   font-weight: 400;
   font-size: 1.6rem;
   -webkit-font-smoothing: antialiased;
@@ -46,3 +46,14 @@ img {
   height: auto;
   vertical-align: bottom;
 }
+
+// @font-face {
+//   font-family: "Noto Sans JP";
+//   font-display: swap;
+//   font-style: normal;
+//   font-weight: 400;
+//   src: url("../fonts/NotoSansCJKjp-Regular.woff2") format("woff2"),
+//     url("../fonts/NotoSansCJKjp-Regular.woff") format("woff"),
+//     url("../fonts/NotoSansCJKjp-Regular.ttf") format("truetype"),
+//     url("../fonts/NotoSansCJKjp-Regular.eot") format("embedded-opentype");
+// }

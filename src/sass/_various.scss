@@ -1,31 +1,16 @@
+
 // wai-aria settings
-%visualHidden {
+.visually-hidden {
   position: absolute;
+  white-space: nowrap;
   width: 1px;
   height: 1px;
   overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px);
-}
-
-// placeholder color
-@mixin placeholderColor($color) {
-  &:placeholder-shown {
-    color: $color;
-  }
-  &::-webkit-input-placeholder {
-    color: $color;
-  }
-  &:-moz-placeholder {
-    color: $color;
-    opacity: 1;
-  }
-  &::-moz-placeholder {
-    color: $color;
-    opacity: 1;
-  }
-  &:-ms-input-placeholder {
-    color: $color;
-  }
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 // mediaQuery Settings
@@ -76,4 +61,44 @@
   }
   // @else if $browser == "" {
   // }
+}
+
+// placeholder color
+@mixin placeholderColor($color) {
+  &:placeholder-shown {
+    color: $color;
+  }
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+  &:-moz-placeholder {
+    color: $color;
+    opacity: 1;
+  }
+  &::-moz-placeholder {
+    color: $color;
+    opacity: 1;
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+}
+
+// 12grid cols Settings
+@mixin col() {
+  @for $i from 1 through 12 {
+    .col-#{$i * 1} {
+      width: calc((100% / 12) * #{$i * 1});
+    }
+    @include min(768px) {
+      .pc-col-#{$i * 1} {
+        width: calc((100% / 12) * #{$i * 1});
+      }
+    }
+    @include max(767px) {
+      .sp-col-#{$i * 1} {
+        width: calc((100% / 12) * #{$i * 1});
+      }
+    }
+  }
 }
