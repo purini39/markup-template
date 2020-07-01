@@ -95,7 +95,7 @@
     "gulp-uglify": "^3.0.1",
     "gulp-webserver": "^0.9.1",
     "gutil": "^1.6.4",
-    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-mozjpeg": "^9.0.0",
     "imagemin-pngquant": "^9.0.0",
     "intersection-observer": "^0.10.0",
     "intersection-observer-polyfill": "^0.1.0",
