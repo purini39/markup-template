@@ -97,7 +97,7 @@
     "gutil": "^1.6.4",
     "imagemin-mozjpeg": "^8.0.0",
     "imagemin-pngquant": "^8.0.0",
-    "intersection-observer": "^0.7.0",
+    "intersection-observer": "^0.10.0",
     "intersection-observer-polyfill": "^0.1.0",
     "lint-staged": "^10.0.0",
     "minimist": "^1.2.0",
