@@ -3,6 +3,6 @@
 .test {
   margin: 0;
   @include min(768px) {
-    margin: 0;
+    margin: 50px;
   }
 }

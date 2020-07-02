@@ -35,19 +35,13 @@
     "jsxBracketSameLine": false
   },
   "stylelint": {
-    "extends": "@geekcojp/stylelint-config"
+    "extends": "stylelint-config-standard"
   },
   "eslintConfig": {
     "parser": "babel-eslint",
-    "extends": [
-      "@geekcojp/eslint-config"
-    ],
+    "extends": "eslint-config-standard",
     "rules": {
       "no-new": 0,
-      "indent": [
-        "error",
-        "tab"
-      ],
       "object-curly-newline": [
         "error",
         "always"
@@ -65,8 +59,6 @@
     "@babel/polyfill": "^7.2.5",
     "@babel/preset-env": "^7.3.1",
     "@babel/register": "^7.0.0",
-    "@geekcojp/eslint-config": "^0.1.2",
-    "@geekcojp/stylelint-config": "^0.2.3",
     "autoprefixer": "^9.4.7",
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.5",
@@ -74,6 +66,11 @@
     "del": "^5.0.0",
     "destyle.css": "^1.0.5",
     "eslint": "^7.0.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
     "gulp": "^4.0.0",
     "gulp-changed": "^4.0.0",
     "gulp-convert": "^0.2.0",
@@ -114,6 +111,7 @@
     "prettier-eslint-cli": "^5.0.0",
     "resize-observer-polyfill": "^1.5.1",
     "stylelint": "^13.0.0",
+    "stylelint-config-standard": "^20.0.0",
     "stylelint-scss": "^3.5.3"
   }
 }
